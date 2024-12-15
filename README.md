@@ -1,5 +1,5 @@
 # 초등 영어 발음 채점 서비스
-<img width="734" alt="초등 영어 발음 채점 서비스 발표 자료" src="https://github.com/user-attachments/assets/epa.png"/>
+![epa](https://github.com/user-attachments/assets/0e65d798-b81d-4719-9fc2-61fecf3ae362)
 
 ## Skills
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>&nbsp;
