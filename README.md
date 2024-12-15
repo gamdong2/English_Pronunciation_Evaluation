@@ -1,6 +1,6 @@
 # 초등 영어 발음 채점 서비스
-![library](https://github.com/user-attachments/assets/dbe2dc05-6514-4469-aada-f464f7a35285)
-![epa](https://github.com/user-attachments/assets/0e65d798-b81d-4719-9fc2-61fecf3ae362)
+<img src="https://github.com/user-attachments/assets/dbe2dc05-6514-4469-aada-f464f7a35285" width="50%" alt="library"/>
+<img src="https://github.com/user-attachments/assets/0e65d798-b81d-4719-9fc2-61fecf3ae362" width="50%" alt="epa"/>
 
 ## Skills
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>&nbsp;
