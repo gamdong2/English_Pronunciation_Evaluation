@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Feedback for {{ user_pronunciation.lesson }}</h1>
+
+    <!-- 레이다 차트 영역 -->
+    <div id="radar-chart"></div>
+
+    <script>
+        // Python에서 전달된 chart_data 가져오기
+        const chartData = JSON.parse('{{ chart_data|safe }}');
+
+        // 레이다 차트 데이터
+        const data = [{
+            type: 'scatterpolar',
+            r: [
+                chartData.pitch_similarity,
+                chartData.rhythm_similarity,
+                chartData.speed_ratio,
+                chartData.pause_similarity,
+                chartData.mispronounced_ratio,
+                chartData.pitch_similarity  // 닫힌 도형을 위해 첫 번째 값 반복
+            ],
+            theta: [
+                "Pitch Similarity",
+                "Rhythm Similarity",
+                "Speed Ratio",
+                "Pause Similarity",
+                "Mispronounced Ratio",
+                "Pitch Similarity"
+            ],
+            fill: 'toself'
+        }];
+
+        // 레이아웃 설정
+        const layout = {
+            polar: {
+                radialaxis: {
+                    visible: true,
+                    range: [0, 1]  // 유사도는 0~1 범위로 가정
+                }
+            },
+            showlegend: false
+        };
+
+        // Plotly 그래프 그리기
+        Plotly.newPlot('radar-chart', data, layout);
+    </script>
+</body>
+</html>

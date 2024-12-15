@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서재</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/library.css' %}">
+    <script src="{% static 'js/library.js' %}" defer></script>
+</head>
+<body>
+    <div class="section-container">
+        <h1>{{ user.username }}님의 서재</h1>
+
+        <!-- 읽고 있는 도서 섹션 -->
+        <h2>읽고 있는 도서</h2>
+        <div class="bookshelf-container-wrapper">
+            <button class="scroll-button left" id="scrollLeftReading">&lt;</button>
+            <div class="bookshelf-container" id="readingBooksContainer"></div>
+            <button class="scroll-button right" id="scrollRightReading">&gt;</button>
+        </div>
+
+        <!-- 학습 도서 목록 섹션 -->
+        <h2>학습 도서 목록</h2>
+        <div class="dropdown">
+            <label for="contentSelect">콘텐츠:</label>
+            <select id="contentSelect">
+                <option value="phonics">파닉스</option>
+                <option value="novel">동화</option>
+                <option value="conversation">회화</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <label for="levelSelect">레벨:</label>
+            <select id="levelSelect">
+                <option value="1">레벨 1</option>
+                <option value="2">레벨 2</option>
+            </select>
+        </div>
+        <div class="bookshelf-container-wrapper">
+            <button class="scroll-button left" id="scrollLeftLearning">&lt;</button>
+            <div class="bookshelf-container" id="learningBooksContainer"></div>
+            <button class="scroll-button right" id="scrollRightLearning">&gt;</button>
+        </div>
+
+        <a href="{% url 'mypage' %}" class="button">마이페이지로 돌아가기</a>
+    </div>
+</body>
+</html>
