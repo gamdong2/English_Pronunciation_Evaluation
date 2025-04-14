@@ -6,12 +6,14 @@
 ## Skills
 <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>&nbsp;
 <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>&nbsp;
-<img src="https://img.shields.io/badge/librosa-0.10.0-brightgreen?style=for-the-badge&logo=python&logoColor=white"/>&nbsp;
-<img src="https://img.shields.io/badge/Parselmouth-0.4.5-brightgreen?style=for-the-badge&logo=python&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>&nbsp;
 <img src="https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/AWS_Lambda-F90?style=for-the-badge&logo=aws-lambda&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/AWS_Step_Functions-FF4F00?style=for-the-badge&logo=amazonaws&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Google_STT-4285F4?style=for-the-badge&logo=google&logoColor=white"/>&nbsp;
+<img src="https://img.shields.io/badge/Tortoise_TTS-7F52FF?style=for-the-badge&logo=python&logoColor=white"/>&nbsp;
 
 ## 프로젝트 상세
-
 - **진행 기간** : 2024년 11월 4일 ~ 2024년 11월 28일 (총 25일)
 - **프로젝트 유형** : 팀 프로젝트 (총 3명)
 
